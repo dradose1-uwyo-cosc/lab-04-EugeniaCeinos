@@ -1,13 +1,9 @@
-# Your Name Here
+# Eugenia Ceinos
 # UWYO COSC 1010
-# Submission Date
+# Submission Date: 10/6/24
 # Lab 03 
-# Lab Section: 
+# Lab Section: 116
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
-
 
 
 # This is your second lab section. It will primarily be about working with lists
@@ -98,8 +94,24 @@ min_temps = [
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
+total_max = 0
+total_min = 0
+length = len(max_temps)
+for number in range(length):
+    total_max += max_temps[number]
+    total_min += min_temps[number]
+
+average_max = total_max / length
+average_min = total_min / length
+print(average_max)
+print(average_min)
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+
+max_temps.sort(reverse=True)
+min_temps.sort(reverse=True)
+print(max_temps[0])
+print(min_temps[0])
 
 
