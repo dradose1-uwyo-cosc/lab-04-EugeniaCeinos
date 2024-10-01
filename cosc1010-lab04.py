@@ -101,17 +101,14 @@ for number in range(length):
     total_max += max_temps[number]
     total_min += min_temps[number]
 
-average_max = total_max / length
-average_min = total_min / length
-print(average_max)
-print(average_min)
+print("The average maximum temperature is:", total_max / length)
+print("The average minimum temperature is:", total_min / length)
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
-max_temps.sort(reverse=True)
-min_temps.sort(reverse=True)
-print(max_temps[0])
-print(min_temps[0])
-
+max_temps.sort()
+min_temps.sort()
+print(f"The highest recorded temperature is: {max_temps[-1]}")
+print(f"The lowest recorded temperature is: {min_temps[0]}")
 
