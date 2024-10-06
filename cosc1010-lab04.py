@@ -1,9 +1,9 @@
 # Eugenia Ceinos
 # UWYO COSC 1010
-# Submission Date: 10/6/24
+# Submission Date: 10/5/24
 # Lab 03 
-# Lab Section: 116
-# Sources, people worked with, help given to: 
+# Lab Section: 16
+# Sources, people worked with, help given to: none
 
 
 # This is your second lab section. It will primarily be about working with lists
@@ -111,4 +111,3 @@ max_temps.sort()
 min_temps.sort()
 print(f"The highest recorded temperature is: {max_temps[-1]}")
 print(f"The lowest recorded temperature is: {min_temps[0]}")
-
